@@ -150,7 +150,7 @@ class InterfazGrafica(ctk.CTk):
             campos = ""
             for campo in Usuario.validar_campos(usuario):
                 campos += f"\n{campo}"
-            CTkMessagebox.CTkMessagebox(title="Error", message=f"Los campos: {campos} \nson obligatorios")
+            CTkMessagebox.CTkMessagebox(title="Error", message=f"Los siguientes campos son obligatorios: {campos}")
             return
 
         # Validar el tipo de dato
