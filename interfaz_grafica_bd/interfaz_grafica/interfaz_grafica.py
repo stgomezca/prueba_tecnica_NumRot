@@ -164,7 +164,7 @@ class InterfazGrafica(ctk.CTk):
         self.limpiar_campos()
 
     def nueva_ventana(self):
-        if self.base_datos.numero_registros() < 10:
+        if self.base_datos.numero_registros() >= 10:
             self.withdraw()
             ventana_secundaria = VentanaSecundaria(self)
         else:
