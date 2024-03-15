@@ -162,6 +162,7 @@ class InterfazGrafica(ctk.CTk):
         usuario.agregar_datos()
 
         self.limpiar_campos()
+        CTkMessagebox.CTkMessagebox(title="Éxito", message="Información guardada correctamente")
 
     def nueva_ventana(self):
         if self.base_datos.numero_registros() >= 10:
