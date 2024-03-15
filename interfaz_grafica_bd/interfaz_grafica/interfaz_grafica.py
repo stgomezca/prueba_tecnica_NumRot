@@ -40,6 +40,7 @@ class InterfazGrafica(ctk.CTk):
         self.infousuario.grid_columnconfigure(0, weight=1)
 
         # Creación de labels
+        self.titulo = ctk.CTkLabel(master=self.infousuario, text="Información del usuario", font=("Arial", 20, "bold"))
         self.numero_documento = ctk.CTkLabel(master=self.infousuario, text="Número de Documento", anchor="w")
         self.primer_nombre = ctk.CTkLabel(master=self.infousuario, text="Primer Nombre", anchor="w")
         self.segundo_nombre = ctk.CTkLabel(master=self.infousuario, text="Segundo Nombre", anchor="w")
@@ -52,16 +53,17 @@ class InterfazGrafica(ctk.CTk):
         self.genero = ctk.CTkLabel(master=self.infousuario, text="Género", anchor="w")
 
         # Posicionamiento de labels
-        self.numero_documento.grid(row=0, column=0, sticky="ew")
-        self.primer_nombre.grid(row=2, column=0, sticky="ew")
-        self.segundo_nombre.grid(row=4, column=0, sticky="ew")
-        self.primer_apellido.grid(row=6, column=0, sticky="ew")
-        self.segundo_apellido.grid(row=8, column=0, sticky="ew")
-        self.telefono.grid(row=10, column=0, sticky="ew")
-        self.correo.grid(row=12, column=0, sticky="ew")
-        self.direccion.grid(row=14, column=0, sticky="ew")
-        self.edad.grid(row=16, column=0, sticky="ew")
-        self.genero.grid(row=18, column=0, sticky="ew")
+        self.titulo.grid(row=0, column=0, sticky="ew")
+        self.numero_documento.grid(row=1, column=0, sticky="ew")
+        self.primer_nombre.grid(row=3, column=0, sticky="ew")
+        self.segundo_nombre.grid(row=5, column=0, sticky="ew")
+        self.primer_apellido.grid(row=7, column=0, sticky="ew")
+        self.segundo_apellido.grid(row=9, column=0, sticky="ew")
+        self.telefono.grid(row=11, column=0, sticky="ew")
+        self.correo.grid(row=13, column=0, sticky="ew")
+        self.direccion.grid(row=15, column=0, sticky="ew")
+        self.edad.grid(row=17, column=0, sticky="ew")
+        self.genero.grid(row=19, column=0, sticky="ew")
 
         # Creación de entries
         self.numero_documento_entry = ctk.CTkEntry(master=self.infousuario)
@@ -76,16 +78,16 @@ class InterfazGrafica(ctk.CTk):
         self.genero_entry = ctk.CTkComboBox(master=self.infousuario, values=["Hombre", "Mujer", "Otro"])
 
         # Posicionamiento de entries
-        self.numero_documento_entry.grid(row=1, column=0, sticky="ew")
-        self.primer_nombre_entry.grid(row=3, column=0, sticky="ew")
-        self.segundo_nombre_entry.grid(row=5, column=0, sticky="ew")
-        self.primer_apellido_entry.grid(row=7, column=0, sticky="ew")
-        self.segundo_apellido_entry.grid(row=9, column=0, sticky="ew")
-        self.telefono_entry.grid(row=11, column=0, sticky="ew")
-        self.correo_entry.grid(row=13, column=0, sticky="ew")
-        self.direccion_entry.grid(row=15, column=0, sticky="ew")
-        self.edad_entry.grid(row=17, column=0, sticky="ew")
-        self.genero_entry.grid(row=19, column=0, sticky="ew")
+        self.numero_documento_entry.grid(row=2, column=0, sticky="ew")
+        self.primer_nombre_entry.grid(row=4, column=0, sticky="ew")
+        self.segundo_nombre_entry.grid(row=6, column=0, sticky="ew")
+        self.primer_apellido_entry.grid(row=8, column=0, sticky="ew")
+        self.segundo_apellido_entry.grid(row=10, column=0, sticky="ew")
+        self.telefono_entry.grid(row=12, column=0, sticky="ew")
+        self.correo_entry.grid(row=14, column=0, sticky="ew")
+        self.direccion_entry.grid(row=16, column=0, sticky="ew")
+        self.edad_entry.grid(row=18, column=0, sticky="ew")
+        self.genero_entry.grid(row=20, column=0, sticky="ew")
 
         # Agregar padding a los elementos del frame
 
